@@ -1,0 +1,839 @@
+html {
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+.header {
+    width: 100%;
+    max-width: 1300px;
+    height: 80px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0A46B8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-element {
+    margin: 0 40px;
+    text-decoration: none;
+}
+
+.download-anchor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 36px;
+    border: 2px solid #0A46B8;
+    border-radius: 13px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media screen and (max-width : 1300px) {
+    .header-logo {
+        margin-left: 15px;
+    }
+
+    .header-logo img {
+        width: 200px;
+    }
+
+    .download-anchor {
+        margin-right: 15px;
+    }
+}
+
+.hello-screen {
+    display: flex;
+    margin-top: 30px;
+    background-image: url(img/Screen.jpg);
+    background-repeat: no-repeat;
+    width: 1300px;
+    height: 728px;
+    border-radius: 15px;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 13px;
+    width: 233px;
+    height: 56px;
+    margin-left: 80px;
+    margin-top: 480px;
+    text-align: center;
+}
+
+.download-btn a {
+    color: white;
+    padding: 15px 17px;
+}
+
+.download-btn a:visited {
+    color: white;
+}
+
+@media screen and (max-width : 1300px) {
+    .hello-screen {
+        margin-top: 0;
+        width: 96%;
+        height: 710px;
+        background-size: contain;
+    }
+
+    .download-btn {
+        margin-top: 40%;
+        margin-left: 6%;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .hello-screen {
+        height: 550px;
+    }
+
+    .download-btn {
+        font-size: 14px;
+        width: 180px;
+        height: 46px;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .hello-screen {
+        height: 440px;
+    }
+}
+
+
+@media screen and (max-width : 600px) {
+    .hello-screen {
+        height: 330px;
+    }
+
+    .download-btn {
+        font-size: 12px;
+        width: 160px;
+        height: 34px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .hello-screen {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .hello-screen {
+        height: 220px;
+    }
+}
+
+.functions-screen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    height: 654px;
+    margin-top: 48px;
+}
+
+.functions-left {
+    width: 612px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 92px;
+}
+
+.order-creation {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.function-head {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.function-description {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.contact-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.function {
+    height: 317px;
+    box-shadow: 2px 2px 2px 3px rgba(84, 84, 84, 0.2);
+    border-radius: 15px;
+    padding-left: 54px;
+}
+
+.functions-right {
+    width: 596px;
+    height: 654px;
+}
+
+@media screen and (max-width : 1300px) {
+    .functions-screen {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .functions-left {
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .order-creation {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        justify-content: space-evenly;
+    }
+
+    .function-head {
+        font-size: 34px;
+        font-weight: 600;
+    }
+
+    .function-description {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .contact-format {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .function {
+        height: 317px;
+        box-shadow: 2px 2px 2px 3px rgba(84, 84, 84, 0.2);
+        border-radius: 15px;
+        padding-left: 54px;
+    }
+
+    .functions-right {
+        width: 596px;
+        height: 654px;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .functions-screen {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .functions-left {
+        width: 380px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .order-creation {
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        justify-content: space-evenly;
+    }
+
+    .function-head {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .function-description {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .contact-format {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .function {
+        width: 360px;
+        box-shadow: 2px 2px 2px 3px rgba(84, 84, 84, 0.2);
+        border-radius: 15px;
+        padding-left: 20px;
+    }
+
+    .functions-right {
+        width: 596px;
+        height: 654px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .functions-right {
+        width: 300px;
+        height: 500px;
+    }
+
+    .functions-right img {
+        width: 300px;
+    }
+
+    .functions-screen {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .functions-left {
+        width: 360px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .order-creation {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        justify-content: space-evenly;
+    }
+
+    .function-head {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .function-description {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .contact-format {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .function {
+        width: 340px;
+        height: 200px;
+        box-shadow: 2px 2px 2px 3px rgba(84, 84, 84, 0.2);
+        border-radius: 15px;
+        padding-left: 20px;
+    }
+}
+
+.download-screen {
+    display: flex;
+    align-items: center;
+    margin-top: 232px;
+    background-image: url(img/download-bg.png);
+    background-repeat: no-repeat;
+    width: 1300px;
+}
+
+.download-left {
+    display: flex;
+
+}
+
+.first-phone {
+    margin-left: 50px;
+    margin-right: 31px;
+    margin-top: -170px;
+}
+
+.second-phone {
+    margin-top: -51px;
+}
+
+.download-right {
+    margin-left: 130px;
+}
+
+.download-head {
+    width: 462px;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.download-desription {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 13px;
+    width: 353px;
+}
+
+.download-buttons {
+    margin-top: 38px;
+    display: flex;
+}
+
+.Android-btn {
+    margin-right: 14px;
+    width: 182px;
+    height: 54px;
+    background-color: #000;
+    border-radius: 7px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.android-icon {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.andoid-btn-text {
+    color: white;
+}
+
+.andoid-btn-text span {
+    font-weight: 600;
+}
+
+.web-app {
+    width: 182px;
+    height: 54px;
+    background-color: #254B96;
+    border-radius: 7px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-btn-text {
+    color: white;
+}
+
+.web-app span {
+    font-weight: 600;
+}
+
+@media screen and (max-width : 1300px) {
+    .download-screen {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 720px;
+        background-image: url(img/download-bg.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: contain;
+    }
+
+    .download-left {
+        display: flex;
+    }
+
+    .first-phone {
+        margin-left: 0px;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+
+    .first-phone img {
+        height: 350px;
+    }
+
+    .second-phone {
+        margin-top: 30px;
+    }
+
+    .second-phone img {
+        height: 350px;
+    }
+
+    .download-right {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-head {
+        text-align: center;
+        width: 462px;
+        color: black;
+        margin-top: 50px;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .download-desription {
+        text-align: center;
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 13px;
+        width: 353px;
+    }
+
+    .download-buttons {
+        margin-top: 38px;
+        display: flex;
+    }
+
+    .Android-btn {
+        margin-right: 14px;
+        width: 182px;
+        height: 54px;
+        background-color: #000;
+        border-radius: 7px;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+    }
+
+    .android-icon {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .andoid-btn-text {
+        color: white;
+    }
+
+    .andoid-btn-text span {
+        font-weight: 600;
+    }
+
+    .web-app {
+        width: 182px;
+        height: 54px;
+        background-color: #254B96;
+        border-radius: 7px;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .web-btn-text {
+        color: white;
+    }
+
+    .web-app span {
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .download-screen {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 220px;
+        background-image: url(img/download-bg.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: contain;
+    }
+
+    .download-left {
+        display: flex;
+    }
+
+    .first-phone {
+        margin-left: 0px;
+        margin-right: 20px;
+        margin-top: -60px;
+    }
+
+    .first-phone img {
+        height: 300px;
+    }
+
+    .second-phone {
+        margin-top: -60px;
+    }
+
+    .second-phone img {
+        height: 300px;
+    }
+
+    .download-right {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-head {
+        text-align: center;
+        width: 462px;
+        color: black;
+        margin-top: 10px;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .download-desription {
+        text-align: center;
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 13px;
+        width: 353px;
+    }
+
+    .download-buttons {
+        margin-top: 10px;
+        display: flex;
+    }
+
+    .Android-btn {
+        margin-right: 14px;
+        width: 182px;
+        height: 54px;
+        background-color: #000;
+        border-radius: 7px;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+    }
+
+    .android-icon {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .andoid-btn-text {
+        color: white;
+    }
+
+    .andoid-btn-text span {
+        font-weight: 600;
+    }
+
+    .web-app {
+        width: 182px;
+        height: 54px;
+        background-color: #254B96;
+        border-radius: 7px;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .web-btn-text {
+        color: white;
+    }
+
+    .web-app span {
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .download-screen {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 220px;
+        background-image: url(img/download-bg.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: contain;
+    }
+
+    .download-left {
+        display: flex;
+    }
+
+    .first-phone {
+        margin-left: 0px;
+        margin-right: 20px;
+        margin-top: -60px;
+    }
+
+    .first-phone img {
+        height: 300px;
+    }
+
+    .second-phone {
+        margin-top: -60px;
+    }
+
+    .second-phone img {
+        height: 300px;
+    }
+
+    .download-right {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-head {
+        text-align: center;
+        width: 350px;
+        color: black;
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .download-desription {
+        text-align: center;
+        color: black;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 13px;
+        width: 353px;
+    }
+
+    .download-buttons {
+        margin-top: 10px;
+        display: flex;
+    }
+
+    .Android-btn {
+        margin-right: 6px;
+        width: 182px;
+        height: 54px;
+        background-color: #000;
+        border-radius: 7px;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+    }
+
+    .android-icon {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .andoid-btn-text {
+        color: white;
+    }
+
+    .andoid-btn-text span {
+        font-weight: 600;
+    }
+
+    .web-app {
+        width: 182px;
+        height: 54px;
+        background-color: #254B96;
+        border-radius: 7px;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .web-btn-text {
+        color: white;
+    }
+
+    .web-app span {
+        font-weight: 600;
+    }
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer {
+    margin-top: 92px;
+    width: 100%;
+    height: 80px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #254B96;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:visited {
+    color: white;
+}
+
+.footer-logo {
+    margin-top: 10px;
+}
+
+.number-anchor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 202px;
+    height: 41px;
+}
+
+@media screen and (max-width : 1300px) {
+    .footer {
+        margin-top: 30px;
+    }
+
+    .footer-logo {
+        margin-left: 15px;
+    }
+
+    .footer-logo img {
+        width: 200px;
+    }
+
+    .number-anchor {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width : 430px) {
+    .footer-logo img {
+        width: 130px;
+    }
+}
